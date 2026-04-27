@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 6 - Interactions</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="section">
+    <div class="section-label">Interaction 1 - Click Event</div>
+    <h2>Toggle Light / Dark Mode</h2>
+    <div class="toggle-row">
+      <p>Click the button to switch between dark and light themes. The entire page updates instantly.</p>
+      <button id="themeBtn">Light Mode</button>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-label">Interaction 2 - Focus &amp; Blur Events</div>
+    <h2>Quick Note</h2>
+    <div class="note-wrap">
+      <textarea id="noteBox" placeholder="Click here to start typing..."></textarea>
+      <p id="noteHint">You are writing, take your time.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-label">Interaction 3 - Mouseover &amp; Mouseout Events</div>
+    <h2>My Skills</h2>
+    <div class="cards-grid">
+      <div class="hover-card" data-skill="HTML">
+        <div class="label">HTML</div>
+      </div>
+      <div class="hover-card" data-skill="CSS">
+        <div class="label">CSS</div>
+      </div>
+      <div class="hover-card" data-skill="JavaScript">
+        <div class="label">JavaScript</div>
+      </div>
+    </div>
+    <p id="skillHint"></p>
+  </div>
+  <div class="section">
+    <div class="section-label">Interaction 4 - Click Event + DOM Manipulation</div>
+    <h2>To-Do List</h2>
+    <div class="todo-input-row">
+      <input id="todoInput" type="text" placeholder="Add a task..." maxlength="80"/>
+      <button id="addTodoBtn">+ Add</button>
+    </div>
+    <ul id="todoList"></ul>
+  </div>
+  <div class="section">
+    <div class="section-label">Interaction 5 - Click Event + CSS Variable Update</div>
+    <h2>Accent Color</h2>
+    <div class="palette-row" id="palette">
+      <button class="palette-btn active" data-color="#f0c040" data-name="Yellow" style="background:#f0c040;" title="Yellow"></button>
+      <button class="palette-btn" data-color="#60d9b0" data-name="Mint" style="background:#60d9b0;" title="Mint"></button>
+      <button class="palette-btn" data-color="#f07850" data-name="Coral" style="background:#f07850;" title="Coral"></button>
+      <button class="palette-btn" data-color="#8080f0" data-name="Lavender" style="background:#8080f0;" title="Lavender"></button>
+      <button class="palette-btn" data-color="#f06090" data-name="Rose" style="background:#f06090;" title="Rose"></button>
+    </div>
+    <p id="accentPreview">Current accent: <strong>#f0c040 - Yellow</strong></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
